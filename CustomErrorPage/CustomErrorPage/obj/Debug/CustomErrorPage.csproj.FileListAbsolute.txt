@@ -1,0 +1,5 @@
+C:\Dev\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\bin\Debug\CustomErrorPage.dll
+C:\Dev\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\bin\Debug\CustomErrorPage.pdb
+C:\Dev\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\obj\Debug\CustomErrorPage.dll
+C:\Dev\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\obj\Debug\CustomErrorPage.pdb
