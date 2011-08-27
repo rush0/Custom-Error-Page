@@ -3,3 +3,8 @@ C:\Dev\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\bin\Debug\Custom
 C:\Dev\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\obj\Debug\ResolveAssemblyReference.cache
 C:\Dev\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\obj\Debug\CustomErrorPage.dll
 C:\Dev\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\obj\Debug\CustomErrorPage.pdb
+C:\Development\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\bin\Debug\CustomErrorPage.dll
+C:\Development\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\bin\Debug\CustomErrorPage.pdb
+C:\Development\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\obj\Debug\CustomErrorPage.dll
+C:\Development\Connolly\CustomErrorPage\CustomErrorPage\CustomErrorPage\obj\Debug\CustomErrorPage.pdb

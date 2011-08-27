@@ -7,30 +7,38 @@ using Microsoft.SharePoint.Administration;
 
 namespace CustomErrorPage.Features.FileNotFoundFeature
 {
-    /// <summary>
-    /// This class handles events raised during feature activation, deactivation, installation, uninstallation, and upgrade.
-    /// </summary>
-    /// <remarks>
-    /// The GUID attached to this class may be used during packaging and should not be modified.
-    /// </remarks>
-
     [Guid("18670ae5-8df4-4802-abb0-43e9ff20b5ba")]
     public class FileNotFoundFeatureEventReceiver : SPFeatureReceiver
     {
         private const string fileNotFoundPage = "Connolly404.html";
+        private const string defaultPageProperty = "Connolly.DefaultErrorPage";
 
+        //SET TO CUSTOM
         public override void FeatureActivated(SPFeatureReceiverProperties properties)
         {
             SPWebApplication webApp = properties.Feature.Parent as SPWebApplication;
+
+            //GET DEFAULT
+            string defaultErrorPage = webApp.FileNotFoundPage;
+            if (!webApp.Properties.ContainsKey(defaultPageProperty))
+            {
+                webApp.Properties[defaultPageProperty] = defaultErrorPage;
+                webApp.Update();
+            }
+
+            
             updateFileNotFoundPage(webApp, fileNotFoundPage);
         }
 
+        //RESET TO DEFAULT
         public override void FeatureDeactivating(SPFeatureReceiverProperties properties)
         {
             SPWebApplication webApp = properties.Feature.Parent as SPWebApplication;
-            updateFileNotFoundPage(webApp, string.Empty);
+            string defaultpage = webApp.Properties[defaultPageProperty] as string;
+            updateFileNotFoundPage(webApp, defaultpage);
         }
 
+        //SET PROPERTY
         private void updateFileNotFoundPage(SPWebApplication webApp, string page)
         {
             try { webApp.FileNotFoundPage = page; webApp.Update(); }

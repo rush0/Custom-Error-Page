@@ -82,6 +82,7 @@
     <BuildDependsOn>
       $(BuildDependsOn);CreatePackage
     </BuildDependsOn>
-    <PostBuildEvent>xcopy /Y $(TargetDir)*.wsp  \\tsclient\G\Branding\CONNOLLY</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
